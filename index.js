@@ -14,12 +14,12 @@ let score ={
     tie: 0,
     losses: 0
 };
-window.addEventListener("load", function(){
-    time=JSON.parse(localStorage.getItem("score"))
-    score=time
+// window.addEventListener("load", function(){
+//     time=JSON.parse(localStorage.getItem("score"))
+//     score=time
 
-    scorePara.innerHTML =`Wins:${score.win}, Draws: ${score.tie}, Losses:${score.losses}`
-})
+//     scorePara.innerHTML =`Wins:${score.win}, Draws: ${score.tie}, Losses:${score.losses}`
+// })
 
 rock.addEventListener("click", function(){
     playGame("rock")
@@ -112,7 +112,7 @@ if(playermove=="scissors") {
 displayPara.innerHTML =`You: ${playermove}- Computer: ${computerChoice}`
 resultPara.innerHTML = result
 scorePara.innerHTML =`Wins:${score.win}, Draws: ${score.tie}, Losses:${score.losses}`
-localStorage.setItem("score", JSON.stringify(score))
+// localStorage.setItem("score", JSON.stringify(score))
 }
 buttonReset.addEventListener("click", function() {
     score.win=0
@@ -121,7 +121,7 @@ buttonReset.addEventListener("click", function() {
     displayPara.innerHTML =``;
     scorePara.innerHTML =`Wins:${score.win}, Draws: ${score.tie}, Losses:${score.losses}`
     resultPara.innerHTML = "";
-    localStorage.setItem("score", JSON.stringify(score))
+    // localStorage.setItem("score", JSON.stringify(score))
 })
 
 console.log(score)
