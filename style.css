@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #1f1f1f;
+    color: white;
+    font-size: 20px;
+    padding-top: 30px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+@media screen and (max-width:450px){
+    body{
+        font-size: 18px;
+        padding-top: 20px;
+    }
+    .game-keys{
+        gap: 15px;
+    }
+    .game-keys .game-button{
+        padding: 24px;
+        border-radius: 50px;
+    }
+    div .clear-score{
+        padding: 12px;
+        border-radius: 20px;
+        border: none;
+    }
+}
+.game-keys{
+    display: flex;
+    gap: 30px;
+
+}
+.game-button{
+    padding: 60px;
+    border-radius: 50%;
+}
+
+.clear-score{
+    background-color: ghostwhite;
+    padding: 20px;
+    border-radius: 30px;
+}
